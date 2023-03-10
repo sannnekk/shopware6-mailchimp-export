@@ -1,0 +1,30 @@
+/* Import statement */
+@import "~scss/variables";
+
+.sw-customer-list__mailchimp-customer-group-select {
+  margin-left: 8px;
+  width: 200px;
+  text-align: left;
+  margin-bottom: 0 !important;
+}
+
+.sw-customer-list__mailchimp-export {
+  border: none;
+  outline: none;
+  margin-left: 8px;
+  background-color: #ffe01b;
+  color: #241c15;
+  padding: 2px 24px;
+  text-decoration: none;
+  border-radius: $border-radius-default;
+  font-weight: $font-weight-semi-bold;
+  font-family: $font-family-default;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  user-select: none;
+
+  &:hover {
+    background-color: #ffcc00;
+  }
+}

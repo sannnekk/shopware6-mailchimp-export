@@ -1,0 +1,9 @@
+{% block sw_customer_list_smart_bar_actions_add %}
+	{% parent %}
+
+	<sw-entity-single-select id="mailchimp_customer_group_select" :criteria="customerGroupCriteria" :value="customerGroupId" class="sw-customer-list__mailchimp-customer-group-select" entity="customer_group" size="medium" resetoption="Alle Kundengruppen" @change="onCustomerGroupChange" placeholder="Alle Kundengruppen"/>
+
+	<sw-button @click="onDownload" :is-loading="isLoadingCustomers" class="sw-customer-list__mailchimp-export">
+		Export for Mailchimp
+	</sw-button>
+{% endblock %}

@@ -1,0 +1,18 @@
+{
+  "name": "hmnet/mailchimp-export",
+  "description": "Plugin for the export of customers for Mailchimp",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "MailchimpExport\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "MailchimpExport\\MailchimpExport",
+    "label": {
+      "de-DE": "Mailchimp Exporte",
+      "en-GB": "Mailchimp Export"
+    }
+  }
+}
